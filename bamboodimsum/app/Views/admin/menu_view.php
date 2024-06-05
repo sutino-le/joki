@@ -66,7 +66,7 @@
                                     <td><?= $no++ ?></td>
                                     <td><?= $rowmenu['menunama'] ?></td>
                                     <td><?= $rowmenu['menudeskripsi'] ?></td>
-                                    <td><?= $rowmenu['menuharga'] ?></td>
+                                    <td><?= number_format($rowmenu['menuharga']) ?></td>
                                     <td><img src="<?= base_url() ?>upload/<?= $rowmenu['menufoto'] ?>" width="50px"
                                             height="50px"></td>
                                     <td>
@@ -75,7 +75,7 @@
                                                 class="fas fa-edit"></i></button>
                                         <button class="btn btn-sm btn-danger d-inline"
                                             onclick="hapus('<?= $rowmenu['menuid'] ?>')"
-                                            <?= ($rowmenu['det_psn_id'] == "") ? "" : "disabled" ?>><i
+                                            <?= ($rowmenu['psn_menuid'] == "") ? "" : "disabled" ?>><i
                                                 class="fas fa-trash"></i></button>
                                     </td>
                                 </tr>

@@ -14,9 +14,7 @@
     <link href="<?= base_url() ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="<?= base_url() ?>assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -84,21 +82,18 @@
                         <h4>Registrasi</h4>
 
 
-                        <form action="<?= base_url() ?>registrasiSimpan" method="post" role="form"
-                            class="php-email-form formregistrasi">
+                        <form action="<?= base_url() ?>registrasiSimpan" method="post" role="form" class="php-email-form formregistrasi">
 
                             <div class="row mt-4">
 
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="userid" class="form-control" id="userid"
-                                        placeholder="Masukan ID User" autocomplete="off">
+                                    <input type="text" name="userid" class="form-control" id="userid" placeholder="Masukan ID User" autocomplete="off">
                                     <div class="invalid-feedback errorUserID"></div>
                                 </div>
 
 
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="usernama" class="form-control" id="usernama"
-                                        placeholder=" Masukan Nama User" autocomplete="off">
+                                    <input type="text" name="usernama" class="form-control" id="usernama" placeholder=" Masukan Nama User" autocomplete="off">
                                     <div class="invalid-feedback errorUserNama"></div>
                                 </div>
 
@@ -107,15 +102,13 @@
                             <div class="row mt-4">
 
                                 <div class="col-md-6 form-group">
-                                    <input type="email" name="useremail" class="form-control" id="useremail"
-                                        placeholder="Masukan Email" autocomplete="off">
+                                    <input type="email" name="useremail" class="form-control" id="useremail" placeholder="Masukan Email" autocomplete="off">
                                     <div class="invalid-feedback errorUserEmail"></div>
                                 </div>
 
 
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="userhp" class="form-control" id="userhp"
-                                        placeholder=" Masukan Nomor HP" autocomplete="off">
+                                    <input type="text" name="userhp" class="form-control" id="userhp" placeholder=" Masukan Nomor HP" autocomplete="off">
                                     <div class="invalid-feedback errorUserHP"></div>
                                 </div>
 
@@ -124,8 +117,7 @@
                             <div class="row mt-4">
 
                                 <div class="col-md-12 form-group">
-                                    <input type="text" name="useralamat" class="form-control" id="useralamat"
-                                        placeholder="Masukan Alamat" autocomplete="off">
+                                    <input type="text" name="useralamat" class="form-control" id="useralamat" placeholder="Masukan Alamat" autocomplete="off">
                                     <div class="invalid-feedback errorUserAlamat"></div>
                                 </div>
 
@@ -133,15 +125,14 @@
 
                             <div class="row mt-4">
                                 <div class="col-md-6 form-group">
-                                    <input type="password" name="userpassword" class="form-control" id="userpassword"
-                                        placeholder="Password" autocomplete="off">
+                                    <input type="password" name="userpassword" class="form-control" id="userpassword" placeholder="Password" autocomplete="off">
                                     <div class="invalid-feedback errorPassword"></div>
                                 </div>
                             </div>
 
                             <div class="row mt-4 mb-5">
                                 <div class="col-md-6 form-group">
-                                    <button type="submit">Login</button>
+                                    <button type="submit">Registrasi</button>
                                 </div>
                             </div>
                         </form>
@@ -173,12 +164,9 @@
                                 <strong>Email:</strong> bamboodimsum@hosting.com<br>
                             </p>
                             <div class="social-links mt-3">
-                                <a href="https://www.facebook.com/people/BambooDimsum/100077758986103/?checkpoint_src=any"
-                                    class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-                                <a href="https://www.instagram.com/bamboodimsum.id/" class="instagram"
-                                    target="_blank"><i class="bx bxl-instagram"></i></a>
-                                <a href="https://id.linkedin.com/company/bamboo-dimsum-tebet" class="linkedin"
-                                    target="_blank"><i class="bx bxl-linkedin"></i></a>
+                                <a href="https://www.facebook.com/people/BambooDimsum/100077758986103/?checkpoint_src=any" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/bamboodimsum.id/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://id.linkedin.com/company/bamboo-dimsum-tebet" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -215,8 +203,7 @@
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="<?= base_url() ?>assets/vendor/aos/aos.js"></script>
@@ -230,93 +217,93 @@
 
 
     <script>
-    $(document).ready(function() {
-        // proses form login
-        $('.formregistrasi').submit(function(e) {
-            e.preventDefault();
+        $(document).ready(function() {
+            // proses form login
+            $('.formregistrasi').submit(function(e) {
+                e.preventDefault();
 
-            $.ajax({
-                type: "post",
-                url: $(this).attr('action'),
-                data: $(this).serialize(),
-                dataType: "json",
-                success: function(response) {
-                    if (response.error) {
-                        let err = response.error;
+                $.ajax({
+                    type: "post",
+                    url: $(this).attr('action'),
+                    data: $(this).serialize(),
+                    dataType: "json",
+                    success: function(response) {
+                        if (response.error) {
+                            let err = response.error;
 
-                        if (err.errUserID) {
-                            $('#userid').addClass('is-invalid');
-                            $('.errorUserID').html(err.errUserID);
-                        } else {
-                            $('#userid').removeClass('is-invalid');
-                            $('#userid').addClass('is-valid');
-                        }
-
-                        if (err.errUserNama) {
-                            $('#usernama').addClass('is-invalid');
-                            $('.errorUserNama').html(err.errUserNama);
-                        } else {
-                            $('#usernama').removeClass('is-invalid');
-                            $('#usernama').addClass('is-valid');
-                        }
-
-
-                        if (err.errUserEmail) {
-                            $('#useremail').addClass('is-invalid');
-                            $('.errorUserEmail').html(err.errUserEmail);
-                        } else {
-                            $('#useremail').removeClass('is-invalid');
-                            $('#useremail').addClass('is-valid');
-                        }
-
-
-                        if (err.errUserHP) {
-                            $('#userhp').addClass('is-invalid');
-                            $('.errorUserHP').html(err.errUserHP);
-                        } else {
-                            $('#userhp').removeClass('is-invalid');
-                            $('#userhp').addClass('is-valid');
-                        }
-
-
-                        if (err.errUserAlamat) {
-                            $('#useralamat').addClass('is-invalid');
-                            $('.errorUserAlamat').html(err.errUserAlamat);
-                        } else {
-                            $('#useralamat').removeClass('is-invalid');
-                            $('#useralamat').addClass('is-valid');
-                        }
-
-
-                        if (err.errPassword) {
-                            $('#userpassword').addClass('is-invalid');
-                            $('.errorPassword').html(err.errPassword);
-                        } else {
-                            $('#userpassword').removeClass('is-invalid');
-                            $('#userpassword').addClass('is-valid');
-                        }
-                    }
-
-                    if (response.sukses) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Berhasil',
-                            text: response.sukses
-                        }).then((result) => {
-                            if (result.isConfirmed) {
-                                location.href = "<?= base_url() ?>loginPelanggan";
+                            if (err.errUserID) {
+                                $('#userid').addClass('is-invalid');
+                                $('.errorUserID').html(err.errUserID);
+                            } else {
+                                $('#userid').removeClass('is-invalid');
+                                $('#userid').addClass('is-valid');
                             }
-                        });
+
+                            if (err.errUserNama) {
+                                $('#usernama').addClass('is-invalid');
+                                $('.errorUserNama').html(err.errUserNama);
+                            } else {
+                                $('#usernama').removeClass('is-invalid');
+                                $('#usernama').addClass('is-valid');
+                            }
+
+
+                            if (err.errUserEmail) {
+                                $('#useremail').addClass('is-invalid');
+                                $('.errorUserEmail').html(err.errUserEmail);
+                            } else {
+                                $('#useremail').removeClass('is-invalid');
+                                $('#useremail').addClass('is-valid');
+                            }
+
+
+                            if (err.errUserHP) {
+                                $('#userhp').addClass('is-invalid');
+                                $('.errorUserHP').html(err.errUserHP);
+                            } else {
+                                $('#userhp').removeClass('is-invalid');
+                                $('#userhp').addClass('is-valid');
+                            }
+
+
+                            if (err.errUserAlamat) {
+                                $('#useralamat').addClass('is-invalid');
+                                $('.errorUserAlamat').html(err.errUserAlamat);
+                            } else {
+                                $('#useralamat').removeClass('is-invalid');
+                                $('#useralamat').addClass('is-valid');
+                            }
+
+
+                            if (err.errPassword) {
+                                $('#userpassword').addClass('is-invalid');
+                                $('.errorPassword').html(err.errPassword);
+                            } else {
+                                $('#userpassword').removeClass('is-invalid');
+                                $('#userpassword').addClass('is-valid');
+                            }
+                        }
+
+                        if (response.sukses) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Berhasil',
+                                text: response.sukses
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    location.href = "<?= base_url() ?>loginPelanggan";
+                                }
+                            });
+                        }
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        alert(xhr.status + '\n' + thrownError);
                     }
-                },
-                error: function(xhr, ajaxOptions, thrownError) {
-                    alert(xhr.status + '\n' + thrownError);
-                }
+                });
+
             });
 
         });
-
-    });
     </script>
 
 </body>

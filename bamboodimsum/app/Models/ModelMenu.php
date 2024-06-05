@@ -21,8 +21,7 @@ class ModelMenu extends Model
     public function dataMenu()
     {
         return $this->table('menu')
-            ->join('temp_pesanan', 'temp_psn_menuid=menuid', 'left')
-            ->join('det_pesanan', 'det_psn_menuid=menuid', 'left')
+            ->join('pesanan', 'psn_menuid=menuid', 'left')
             ->groupBy('menuid', 'ASC')
             ->get();
     }

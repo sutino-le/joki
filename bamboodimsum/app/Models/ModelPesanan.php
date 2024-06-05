@@ -7,11 +7,16 @@ use CodeIgniter\Model;
 class ModelPesanan extends Model
 {
     protected $table            = 'pesanan';
-    protected $primaryKey       = 'pesanid';
+    protected $primaryKey       = 'psn_id';
     protected $allowedFields    = [
-        'pesannomor', 'pesanuser', 'pesanstatus', 'pesankurir'
+        'psn_userid', 'psn_menuid', 'psn_tanggal', 'psn_jumlah', 'psn_status', 'psn_kurir'
     ];
 
     // Dates
     protected $useTimestamps = true;
+
+    public function dataPesanan($userid)
+    {
+        return $this->table('pesanan')->where('psn_userid', $userid)->get();
+    }
 }

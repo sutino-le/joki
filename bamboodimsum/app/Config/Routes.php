@@ -55,3 +55,6 @@ $routes->get('/loginPelanggan', 'Login::loginPelanggan');
 $routes->post('/cekUserPelanggan', 'Login::cekUserPelanggan');
 $routes->get('/registrasi', 'Login::registrasi');
 $routes->post('/registrasiSimpan', 'Login::registrasiSimpan');
+$routes->get('/tambahKeranjang/(:any)', 'Pesanan::tambahKeranjang/$1');
+$routes->post('/formTambahKeranjangSimpan', 'Pesanan::formTambahKeranjangSimpan');
+$routes->get('/lihatKeranjang/(:any)', 'Pesanan::lihatKeranjang/$1');

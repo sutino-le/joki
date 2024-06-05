@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2024 at 11:09 AM
+-- Generation Time: Jun 04, 2024 at 09:38 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -24,17 +24,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `det_pesanan`
+-- Table structure for table `keranjang`
 --
 
-CREATE TABLE `det_pesanan` (
-  `det_psn_id` int(11) NOT NULL,
-  `det_psn_menuid` int(11) NOT NULL,
-  `det_psn_jumlah` int(11) NOT NULL,
-  `det_psn_nomor` int(11) NOT NULL,
+CREATE TABLE `keranjang` (
+  `krn_id` int(11) NOT NULL,
+  `krn_userid` varchar(100) NOT NULL,
+  `krn_menuid` int(11) NOT NULL,
+  `krn_tanggal` date NOT NULL,
+  `krn_jumlah` int(11) NOT NULL,
+  `krn_status` varchar(100) NOT NULL,
+  `krn_kurir` varchar(100) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `keranjang`
+--
+
+INSERT INTO `keranjang` (`krn_id`, `krn_userid`, `krn_menuid`, `krn_tanggal`, `krn_jumlah`, `krn_status`, `krn_kurir`, `created_at`, `updated_at`) VALUES
+(1, 'tino', 2, '2024-06-04', 2, 'Progress', '', '2024-06-04 03:19:22', '2024-06-04 03:27:18'),
+(2, 'andi', 3, '2024-06-04', 1, 'Progress', '', '2024-06-04 07:33:01', '2024-06-04 07:33:01');
 
 -- --------------------------------------------------------
 
@@ -74,6 +85,17 @@ CREATE TABLE `menu` (
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `menu`
+--
+
+INSERT INTO `menu` (`menuid`, `menunama`, `menudeskripsi`, `menuharga`, `menufoto`, `created_at`, `updated_at`) VALUES
+(3, 'Bamboo Spesial', 'Roti tawar, udang, cumi, dibungkus kulit siawmay', 18000, '1717484687_447c17975115170aace7.jpg', '2024-06-04 07:04:47', '2024-06-04 07:04:47'),
+(4, 'Bola Kumis Naga', 'Daging ayam, udang, wortel, bengkoang, dibalut kulit pangsit', 18000, '1717484760_18df0ae7335f570b9acf.jpg', '2024-06-04 07:06:00', '2024-06-04 07:06:00'),
+(5, 'Pangsit Udang Mayonaise', 'Pangsit goreng udang dan saos mayonaise', 17000, '1717484855_313f8b87b741cf5f3489.jpg', '2024-06-04 07:07:35', '2024-06-04 07:07:35'),
+(6, 'Lumpia Kulit Tahu', 'Ham ayam, udang, sayur, dibungkus kulit tahu', 18500, '1717484927_aba94a3c25f175b1d881.jpg', '2024-06-04 07:08:47', '2024-06-04 07:08:47'),
+(7, 'Bola Cumi', 'Cumi dibalut dengan roti tawar', 18000, '1717485110_0236b6eb8ba95735b712.jpg', '2024-06-04 07:11:50', '2024-06-04 07:11:50');
+
 -- --------------------------------------------------------
 
 --
@@ -81,26 +103,13 @@ CREATE TABLE `menu` (
 --
 
 CREATE TABLE `pesanan` (
-  `pesanid` int(11) NOT NULL,
-  `pesannomor` int(11) NOT NULL,
-  `pesanuser` varchar(100) NOT NULL,
-  `pesanstatus` varchar(100) NOT NULL,
-  `pesankurir` varchar(100) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `temp_pesanan`
---
-
-CREATE TABLE `temp_pesanan` (
-  `temp_psn_id` int(11) NOT NULL,
-  `temp_psn_menuid` int(11) NOT NULL,
-  `temp_psn_jumlah` int(11) NOT NULL,
-  `temp_psn_nomor` int(11) NOT NULL,
+  `psn_id` int(11) NOT NULL,
+  `psn_userid` varchar(100) NOT NULL,
+  `psn_menuid` int(11) NOT NULL,
+  `psn_tanggal` date NOT NULL,
+  `psn_jumlah` int(11) NOT NULL,
+  `psn_status` varchar(100) NOT NULL,
+  `psn_kurir` varchar(100) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -128,17 +137,18 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`userid`, `usernama`, `useremail`, `userhp`, `userpassword`, `useralamat`, `userlevel`, `created_at`, `updated_at`) VALUES
-('Admin', 'Administrator', 'admin@gmail.com', '08xxxxxxxxxx', '123456', 'Jakarta', 1, '2024-05-23 03:23:22', '2024-05-23 08:01:05');
+('Admin', 'Administrator', 'admin@gmail.com', '08xxxxxxxxxx', '123456', 'Jakarta', 1, '2024-05-23 03:23:22', '2024-05-23 08:01:05'),
+('andi', 'Andi', 'andi@gmail.com', '088808881234', '123456', 'Jakarta', 3, '2024-06-04 07:26:45', '2024-06-04 07:26:45');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `det_pesanan`
+-- Indexes for table `keranjang`
 --
-ALTER TABLE `det_pesanan`
-  ADD PRIMARY KEY (`det_psn_id`);
+ALTER TABLE `keranjang`
+  ADD PRIMARY KEY (`krn_id`);
 
 --
 -- Indexes for table `level`
@@ -156,13 +166,7 @@ ALTER TABLE `menu`
 -- Indexes for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  ADD PRIMARY KEY (`pesanid`);
-
---
--- Indexes for table `temp_pesanan`
---
-ALTER TABLE `temp_pesanan`
-  ADD PRIMARY KEY (`temp_psn_id`);
+  ADD PRIMARY KEY (`psn_id`);
 
 --
 -- Indexes for table `user`
@@ -176,10 +180,10 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT for table `det_pesanan`
+-- AUTO_INCREMENT for table `keranjang`
 --
-ALTER TABLE `det_pesanan`
-  MODIFY `det_psn_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `keranjang`
+  MODIFY `krn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `level`
@@ -191,19 +195,13 @@ ALTER TABLE `level`
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `menuid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `menuid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `pesanid` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `temp_pesanan`
---
-ALTER TABLE `temp_pesanan`
-  MODIFY `temp_psn_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `psn_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
