@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 04, 2024 at 09:38 AM
+-- Generation Time: Jun 06, 2024 at 12:04 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -38,14 +38,6 @@ CREATE TABLE `keranjang` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `keranjang`
---
-
-INSERT INTO `keranjang` (`krn_id`, `krn_userid`, `krn_menuid`, `krn_tanggal`, `krn_jumlah`, `krn_status`, `krn_kurir`, `created_at`, `updated_at`) VALUES
-(1, 'tino', 2, '2024-06-04', 2, 'Progress', '', '2024-06-04 03:19:22', '2024-06-04 03:27:18'),
-(2, 'andi', 3, '2024-06-04', 1, 'Progress', '', '2024-06-04 07:33:01', '2024-06-04 07:33:01');
 
 -- --------------------------------------------------------
 
@@ -113,6 +105,15 @@ CREATE TABLE `pesanan` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pesanan`
+--
+
+INSERT INTO `pesanan` (`psn_id`, `psn_userid`, `psn_menuid`, `psn_tanggal`, `psn_jumlah`, `psn_status`, `psn_kurir`, `created_at`, `updated_at`) VALUES
+(1, 'andi', 3, '2024-06-06', 1, 'Progress', '', '2024-06-06 01:39:21', '2024-06-06 01:39:21'),
+(2, 'andi', 5, '2024-06-06', 2, 'Progress', '', '2024-06-06 01:39:21', '2024-06-06 01:39:21'),
+(3, 'andi', 7, '2024-06-06', 1, 'Progress', '', '2024-06-06 01:39:21', '2024-06-06 01:39:21');
 
 -- --------------------------------------------------------
 
@@ -183,7 +184,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `keranjang`
 --
 ALTER TABLE `keranjang`
-  MODIFY `krn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `krn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `level`
@@ -201,7 +202,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `psn_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `psn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables

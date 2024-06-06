@@ -12,7 +12,12 @@ class Pesanan extends BaseController
 {
     public function index()
     {
-        //
+        $modelPesanan = new ModelPesanan();
+        $data = [
+            'menu'          => 'pesanan',
+            'dataPesanan'     => $modelPesanan->dataPesan()
+        ];
+        return view('admin/pesanan_view', $data);
     }
 
     // tambahKeranjang
@@ -102,5 +107,66 @@ class Pesanan extends BaseController
         ];
 
         echo json_encode($json);
+    }
+
+    // pesanan proses
+    public function pesananProses()
+    {
+        if ($this->request->isAJAX()) {
+            $validation = \Config\Services::validation();
+            $valid = $this->validate([
+                'userid' => [
+                    'rules'     => 'required',
+                    'label'     => 'User',
+                    'errors'    => [
+                        'required'  => 'Anda belum login...'
+                    ]
+                ],
+            ]);
+
+
+            if (!$valid) {
+                $json = [
+                    'error' => [
+                        'errUserID'           => $validation->getError('userid'),
+                    ]
+                ];
+            } else {
+
+
+                $userid   = $this->request->getPost('userid');
+
+                $modelKeranjang = new ModelKeranjang();
+                $dataKeranjang       = $modelKeranjang->getWhere(['krn_userid' => $userid]);
+
+                $fieldDetail = [];
+
+                foreach ($dataKeranjang->getResultArray() as $row) {
+                    $fieldDetail[] = [
+                        'psn_userid'            => $row['krn_userid'],
+                        'psn_menuid'            => $row['krn_menuid'],
+                        'psn_tanggal'           => $row['krn_tanggal'],
+                        'psn_jumlah'            => $row['krn_jumlah'],
+                        'psn_status'            => $row['krn_status'],
+                        'psn_kurir'             => $row['krn_kurir'],
+                    ];
+                }
+
+                $modelPesanan = new ModelPesanan();
+                $modelPesanan->insertBatch($fieldDetail);
+
+
+                // hapus temp barang masuk berdasarkan faktur
+                $modelKeranjang->where(['krn_userid' => $userid]);
+                $modelKeranjang->delete();
+
+                $json = [
+                    'sukses' => 'Makanan berhasil dipesan...'
+                ];
+            }
+
+
+            echo json_encode($json);
+        }
     }
 }

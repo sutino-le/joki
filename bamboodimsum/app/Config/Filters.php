@@ -78,7 +78,7 @@ class Filters extends BaseConfig
             'filterPelanggan' => [
                 'except' => [
                     '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan',
-                    '/tambahKeranjang/*', '/formTambahKeranjangSimpan', '/lihatKeranjang/*',
+                    '/tambahKeranjang/*', '/formTambahKeranjangSimpan', '/lihatKeranjang/*', '/pesananProses',
                 ]
             ],
         ],

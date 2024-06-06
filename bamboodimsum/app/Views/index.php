@@ -75,18 +75,21 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">Tentang kami</a></li>
-                    <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-                    <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+                    <li><a class="nav-link scrollto active" href="<?= base_url() ?>#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#about">Tentang kami</a></li>
+                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#menu">Menu</a></li>
+                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#gallery">Galeri</a></li>
+                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#contact">Kontak</a></li>
                     <li>
                         <?php
                         if (session()->level == 3) {
                         ?>
-                    <li><a class="nav-link scrollto" href="#" onclick="lihatKeranjang('<?= session()->userid ?>')"><i
-                                class="bi bi-cart4" style='font-size:24px' title="Keranjang"></i></a></li>
-                    <li class="dropdown"><a href="#"><span><?= session()->usernama ?></span> <i
+                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#"
+                            onclick="lihatKeranjang('<?= session()->userid ?>')"><i class="bi bi-cart4"
+                                style='font-size:24px' title="Keranjang"></i></a></li>
+
+                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#pesanansaya">Pesanan Saya</a></li>
+                    <li class="dropdown"><a href="<?= base_url() ?>#"><span><?= session()->usernama ?></span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="<?= base_url() ?>logout"">Logout</a></li>
@@ -117,7 +120,7 @@
                     <h2>All You Can Eat</h2>
 
                     <div class="btns">
-                        <a href="#menu" class="btn-menu animated fadeInUp scrollto">Menu Kami</a>
+                        <a href="<?= base_url() ?>#menu" class="btn-menu animated fadeInUp scrollto">Menu Kami</a>
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
@@ -194,7 +197,7 @@
                     <div class="col-lg-6 menu-item filter-starters">
                         <img src="<?= base_url() ?>upload/<?= $rowMenu['menufoto'] ?>" class="menu-img">
                         <div class="menu-content">
-                            <a href="#"><?= $rowMenu['menunama'] ?></a><span>Rp.
+                            <a href="<?= base_url() ?>#"><?= $rowMenu['menunama'] ?></a><span>Rp.
                                 <?= number_format($rowMenu['menuharga']) ?></span>
                         </div>
                         <div class="menu-ingredients">
@@ -221,6 +224,122 @@
 
             </div>
         </section><!-- End Menu Section -->
+
+
+
+
+
+
+        <!-- ======= Pesanan Section ======= -->
+        <section id="pesanansaya" class="pesanansaya">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Pesanan Saya</h2>
+                    <?php
+                    if (session()->level == 3) {
+                        echo "";
+                    } else {
+                    ?>
+
+                    <p>Silahkan Login atau Registrasi terlebih dahulu untuk memesan makanan...</p>
+                    <?php
+                    }
+                    ?>
+                </div>
+
+
+
+                <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+
+                    <div class="row ">
+                        <div class="col-6">
+                            <b>Menu Pesanan</b>
+                        </div>
+                        <div class="col-5">
+                            <b>Jumlah</b>
+                        </div>
+                        <div class="col-1">
+                            <b>Status</b>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <?php
+                    $totalHarga = 0;
+                    foreach ($dataPesanan->getResultArray() as $rowPesanan) :
+                    ?>
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="<?= base_url() ?>upload/<?= $rowPesanan['menufoto'] ?>" width="50px"
+                                height="50px">
+                        </div>
+                        <div class="col-5">
+                            <b><?= $rowPesanan['menunama'] ?></b>
+                            <p><?= $rowPesanan['menudeskripsi'] ?> <br>Rp.
+                                <?= number_format($rowPesanan['menuharga']) ?></p>
+                        </div>
+                        <div class="col-2">
+                            x <?= $rowPesanan['psn_jumlah'] ?>
+                        </div>
+                        <div class="col-3">
+                            <?= number_format($rowPesanan['menuharga'] * $rowPesanan['psn_jumlah']) ?>
+                        </div>
+                        <div class="col-1">
+                            <b><?= $rowPesanan['psn_status'] ?></b>
+                        </div>
+                    </div>
+                    <?php
+                        $totalHarga += $rowPesanan['menuharga'] * $rowPesanan['psn_jumlah'];
+                    endforeach
+                    ?>
+
+                    <hr>
+                    <div class="row ">
+                        <div class="col-8">
+                            <b>Total Pembayaran</b>
+                        </div>
+                        <div class="col-4">
+                            <b><?= number_format($totalHarga) ?></b>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- End Pesanan Section -->
+
+
+
+
+
+
+
+
+
+        <!-- ======= Belum ada Section ======= -->
+        <section id="belumada" class="belumada section-bg">
+
+        </section>
+        <!-- End Belum ada Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!-- ======= Gallery Section ======= -->
@@ -474,7 +593,7 @@
 
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    <a href="<?= base_url() ?>#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->

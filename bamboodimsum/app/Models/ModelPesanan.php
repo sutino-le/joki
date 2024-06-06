@@ -15,8 +15,39 @@ class ModelPesanan extends Model
     // Dates
     protected $useTimestamps = true;
 
+
+
     public function dataPesanan($userid)
     {
-        return $this->table('pesanan')->where('psn_userid', $userid)->get();
+        return $this->table('pesanan')
+            ->join('menu', 'menuid=psn_menuid', 'left')
+            ->where('psn_userid', $userid)
+            ->get();
+    }
+
+
+
+
+    public function daftarPesanan()
+    {
+        return $this->table('pesanan')
+            ->join('menu', 'menuid=psn_menuid', 'left')
+            ->join('user', 'userid=psn_userid', 'left')
+            ->groupBy('psn_userid', 'Asc')
+            ->where('psn_status', 'Progress')
+            ->get();
+    }
+
+
+
+
+    public function dataPesan()
+    {
+        return $this->table('pesanan')
+            ->join('menu', 'menuid=psn_menuid', 'left')
+            ->join('user', 'userid=psn_userid', 'left')
+            ->orderby('psn_tanggal', 'Desc')
+            ->orderby('psn_id', 'Asc')
+            ->get();
     }
 }

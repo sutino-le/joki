@@ -15,14 +15,21 @@
 
 
 
-            <form action="<?= base_url('formTambahKeranjangSimpan') ?>" method="post" id="formTambah" class="formsimpan"
+            <form action="<?= base_url('pesananProses') ?>" method="post" id="formTambah" class="formsimpan"
                 enctype="multipart/form-data">
                 <?= csrf_field(); ?>
+
+                <input type="hidden" name="userid" id="userid" value="<?= session()->userid ?>">
 
                 <div class="modal-header bg-dark text-warning">
                     <h5 class="modal-title" id="staticBackdropLabel">Keranjang Saya</h5>
                 </div>
                 <div class="modal-body bg-dark">
+
+
+                    <div class="invalid-feedback errorUserID"></div>
+
+
                     <div class="row ">
                         <div class="col-7">
                             <b>Menu Pesanan</b>
@@ -84,29 +91,8 @@
 </div>
 
 
-
-<script src="<?= base_url('assets_admin/dist/js/autoNumeric.js') ?>"></script>
 <script>
 $(document).ready(function() {
-
-
-    // autonumerik harga
-    $('#menuharga').autoNumeric('init', {
-        mDec: 2,
-        aDec: ',',
-        aSep: '.',
-    })
-    $('#menuharga').keyup(function(e) {
-        let menuharga = $('#menuharga').autoNumeric('get');
-
-    });
-
-
-
-
-
-
-
 
     $('.formsimpan').submit(function(e) {
         e.preventDefault();
@@ -115,21 +101,22 @@ $(document).ready(function() {
 
         $.ajax({
             type: "post",
-            url: '<?= base_url('formTambahKeranjangSimpan') ?>',
+            url: '<?= base_url('pesananProses') ?>',
             data: formData,
             contentType: false,
             processData: false,
             dataType: "json",
             success: function(response) {
+
                 if (response.error) {
                     let err = response.error;
 
-                    if (err.errJumlah) {
-                        $('#krn_jumlah').addClass('is-invalid');
-                        $('.errorJumlah').html(err.errJumlah);
+                    if (err.errUserID) {
+                        $('#userid').addClass('is-invalid');
+                        $('.errorUserID').html(err.errUserID);
                     } else {
-                        $('#krn_jumlah').removeClass('is-invalid');
-                        $('#krn_jumlah').addClass('is-valid');
+                        $('#userid').removeClass('is-invalid');
+                        $('#userid').addClass('is-valid');
                     }
                 }
 
