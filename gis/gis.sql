@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2024 at 12:03 PM
+-- Generation Time: Jun 07, 2024 at 12:38 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -66,6 +66,13 @@ CREATE TABLE `level` (
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `level`
+--
+
+INSERT INTO `level` (`levelid`, `levelnama`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', '2024-06-07 05:18:27', '2024-06-07 05:18:27');
+
 -- --------------------------------------------------------
 
 --
@@ -97,6 +104,13 @@ CREATE TABLE `user` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`userid`, `usernama`, `useremail`, `userhp`, `userpassword`, `userlevel`, `created_at`, `updated_at`) VALUES
+('admin', 'Administrator', 'admin@gmail.com', '08xxxxxxxxxx', 'admin', 1, '2024-06-07 05:18:43', '2024-06-07 05:18:43');
 
 --
 -- Indexes for dumped tables
@@ -152,7 +166,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `level`
 --
 ALTER TABLE `level`
-  MODIFY `levelid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `levelid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `lokasi`
