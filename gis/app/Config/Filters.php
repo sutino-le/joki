@@ -51,6 +51,11 @@ class Filters extends BaseConfig
             'filterAdmin' => [
                 'except' => [
                     '/', '/login', '/cekUser', '/main',  '/logout',
+                    '/datalevel', '/formTambahLevel', '/formTambahLevelSimpan', '/formLevelEdit/*', '/formEditLevelSimpan', '/levelHapus/*',
+                    '/datauser',  '/formTambahUser', '/formTambahUserSimpan', '/formUserEdit/*', '/formEditUserSimpan', '/userHapus/*',
+                    '/datakategori', '/formTambahKategori', '/formTambahKategoriSimpan', '/formKategoriEdit/*', '/formEditKategoriSimpan', '/kategoriHapus/*',
+                    '/datalokasi', '/formTambahLokasi', '/formTambahLokasiSimpan', '/formLokasiEdit/*', '/formEditLokasiSimpan', '/lokasiHapus/*', '/detailLokasi/*',
+                    '/dataintelijen', '/formTambahIntelijen', '/formTambahIntelijenSimpan', '/formIntelijenEdit/*', '/formEditIntelijenSimpan', '/intelijenHapus/*', '/detailIntelijen/*',
                 ]
             ],
         ],

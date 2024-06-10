@@ -11,15 +11,20 @@
     <link href="<?= base_url() ?>upload/logo.png" rel="apple-touch-icon">
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/plugins/fontawesome-free/css/all.min.css">
     <!-- DataTables -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet"
+        href="<?= base_url() ?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/dist/css/adminlte.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -50,7 +55,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="<?= base_url() ?>main" class="brand-link">
-                <img src="<?= base_url() ?>upload/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="<?= base_url() ?>upload/logo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Intelijen Tasikmalaya</span>
             </a>
 
@@ -59,7 +65,8 @@
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="<?= base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="<?= base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2"
+                            alt="User Image">
                     </div>
                     <div class="info">
                         <a href="<?= base_url() ?>main" class="d-block"><?= session()->usernama ?></a>
@@ -75,12 +82,14 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
 
 
 
                         <li class="nav-item">
-                            <a href="<?= base_url() ?>main" class="nav-link <?= ($menu == "dashboard") ? "active" : ""  ?>">
+                            <a href="<?= base_url() ?>main"
+                                class="nav-link <?= ($menu == "dashboard") ? "active" : ""  ?>">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -89,7 +98,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url() ?>datalevel" class="nav-link <?= ($menu == "datalevel") ? "active" : ""  ?>">
+                            <a href="<?= base_url() ?>datalevel"
+                                class="nav-link <?= ($menu == "datalevel") ? "active" : ""  ?>">
                                 <i class="nav-icon fas fa-sitemap"></i>
                                 <p>
                                     Data Level
@@ -98,7 +108,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url() ?>datauser" class="nav-link <?= ($menu == "datauser") ? "active" : ""  ?>">
+                            <a href="<?= base_url() ?>datauser"
+                                class="nav-link <?= ($menu == "datauser") ? "active" : ""  ?>">
                                 <i class="nav-icon fas fa-user-cog"></i>
                                 <p>
                                     Data User
@@ -107,7 +118,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url() ?>datakategori" class="nav-link <?= ($menu == "datakategori") ? "active" : ""  ?>">
+                            <a href="<?= base_url() ?>datakategori"
+                                class="nav-link <?= ($menu == "datakategori") ? "active" : ""  ?>">
                                 <i class="nav-icon fas fa-share-alt"></i>
                                 <p>
                                     Data Kategori
@@ -116,7 +128,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url() ?>datalokasi" class="nav-link <?= ($menu == "datalokasi") ? "active" : ""  ?>">
+                            <a href="<?= base_url() ?>datalokasi"
+                                class="nav-link <?= ($menu == "datalokasi") ? "active" : ""  ?>">
                                 <i class="nav-icon fas fa-map-pin"></i>
                                 <p>
                                     Data Lokasi
@@ -125,7 +138,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url() ?>dataintelinjen" class="nav-link <?= ($menu == "dataintelinjen") ? "active" : ""  ?>">
+                            <a href="<?= base_url() ?>dataintelijen"
+                                class="nav-link <?= ($menu == "dataintelijen") ? "active" : ""  ?>">
                                 <i class="nav-icon fas fa-map-marked-alt"></i>
                                 <p>
                                     Data Intelijen
@@ -192,23 +206,23 @@
     <script src="<?= base_url() ?>assets/dist/js/adminlte.min.js"></script>
     <!-- Page specific script -->
     <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "lengthChange": false,
-                "autoWidth": false,
-                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
-            });
+    $(function() {
+        $("#example1").DataTable({
+            "responsive": true,
+            "lengthChange": false,
+            "autoWidth": false,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
         });
+    });
     </script>
 </body>
 

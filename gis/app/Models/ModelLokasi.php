@@ -21,4 +21,11 @@ class ModelLokasi extends Model
             ->join('data_intilejen', 'intel_lokid=lokid', 'left')
             ->get();
     }
+
+    public function cekKategori($katnama)
+    {
+        return $this->table('kategori')->getWhere([
+            'katnama' => $katnama
+        ]);
+    }
 }

@@ -22,4 +22,16 @@ class ModelIntelijen extends Model
             ->join('lokasi', 'lokid=intel_lokid', 'left')
             ->get();
     }
+
+
+
+    public function detailIntelijen($intel_id)
+    {
+        return $this->table('data_intilejen')
+            ->join('kategori', 'katid=intel_katid', 'left')
+            ->join('lokasi', 'lokid=intel_lokid', 'left')
+            ->getWhere([
+                'intel_id' => $intel_id
+            ]);
+    }
 }

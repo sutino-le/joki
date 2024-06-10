@@ -19,4 +19,11 @@ class ModelLevel extends Model
             ->join('user', 'userlevel=levelid', 'left')
             ->get();
     }
+
+    public function cekLevel($levelnama)
+    {
+        return $this->table('level')->getWhere([
+            'levelnama' => $levelnama
+        ]);
+    }
 }

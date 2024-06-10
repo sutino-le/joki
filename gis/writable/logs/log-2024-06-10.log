@@ -1,0 +1,622 @@
+INFO - 2024-06-10 01:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 01:21:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layout.php')
+ 2 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('admin/layout', [], true)
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('level/level_view', [], true)
+ 4 APPPATH\Controllers\Level.php(18): view('level/level_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Level->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Level))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 01:22:09 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('datalevel', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 01:22:12 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('datalevel', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 01:22:13 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('datalevel', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 01:22:14 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(211): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('datalevel', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 01:22:37 --> BadMethodCallException: Call to undefined method App\Models\ModelLevel::cekLevel
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Level.php(59): CodeIgniter\Model->__call('cekLevel', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Level->formTambahLevelSimpan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Level))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 01:22:57 --> BadMethodCallException: Call to undefined method App\Models\ModelLevel::cekLevel
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Level.php(59): CodeIgniter\Model->__call('cekLevel', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Level->formTambahLevelSimpan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Level))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 01:48:57 --> ErrorException: Undefined array key "kategoriid"
+in APPPATH\Views\kategori\kategori_view.php on line 69.
+ 1 APPPATH\Views\kategori\kategori_view.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kategoriid"', 'C:\\xampp\\htdocs\\gis\\app\\Views\\kategori\\kategori_view.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\gis\\app\\Views\\kategori\\kategori_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kategori/kategori_view', [], true)
+ 5 APPPATH\Controllers\Kategori.php(18): view('kategori/kategori_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 01:49:15 --> ErrorException: Undefined array key "userid"
+in APPPATH\Views\kategori\kategori_view.php on line 73.
+ 1 APPPATH\Views\kategori\kategori_view.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userid"', 'C:\\xampp\\htdocs\\gis\\app\\Views\\kategori\\kategori_view.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\gis\\app\\Views\\kategori\\kategori_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kategori/kategori_view', [], true)
+ 5 APPPATH\Controllers\Kategori.php(18): view('kategori/kategori_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 01:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 01:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 02:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-10 03:36:10 --> mysqli_sql_exception: Column 'intel_deskripsi' cannot be null in C:\xampp\htdocs\gis\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gis\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\gis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\gis\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\gis\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\gis\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gis\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gis\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gis\app\Controllers\Intelijen.php(111): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gis\system\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+#9 C:\xampp\htdocs\gis\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+#10 C:\xampp\htdocs\gis\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gis\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-10 03:36:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 03:36:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:10\', \'2024-06-10 03:36:10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:10\', \'2024-06-10 03:36:10\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 03:36:10 --> [Caused by] mysqli_sql_exception: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:10\', \'2024-06-10 03:36:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:10\', \'2024-06-10 03:36:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:10\', \'2024-06-10 03:36:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 03:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-10 03:36:17 --> mysqli_sql_exception: Column 'intel_deskripsi' cannot be null in C:\xampp\htdocs\gis\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gis\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\gis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\gis\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\gis\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\gis\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gis\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gis\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gis\app\Controllers\Intelijen.php(111): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gis\system\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+#9 C:\xampp\htdocs\gis\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+#10 C:\xampp\htdocs\gis\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gis\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-10 03:36:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 03:36:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:17\', \'2024-06-10 03:36:17\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:17\', \'2024-06-10 03:36:17\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 03:36:17 --> [Caused by] mysqli_sql_exception: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:17\', \'2024-06-10 03:36:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:17\', \'2024-06-10 03:36:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:17\', \'2024-06-10 03:36:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 03:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-10 03:36:58 --> mysqli_sql_exception: Column 'intel_deskripsi' cannot be null in C:\xampp\htdocs\gis\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\gis\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\gis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\gis\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\gis\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\gis\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gis\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gis\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gis\app\Controllers\Intelijen.php(111): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gis\system\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+#9 C:\xampp\htdocs\gis\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+#10 C:\xampp\htdocs\gis\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gis\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-10 03:36:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 03:36:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:58\', \'2024-06-10 03:36:58\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:58\', \'2024-06-10 03:36:58\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 03:36:58 --> [Caused by] mysqli_sql_exception: Column 'intel_deskripsi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:58\', \'2024-06-10 03:36:58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:58\', \'2024-06-10 03:36:58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (\'Longsor\', NULL, \'2\', \'1\', \'2024-06-10\', \'Sedang\', \'2024-06-10 03:36:58\', \'2024-06-10 03:36:58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_intilejen` (`intel_judul`, `intel_deskripsi`, `intel_katid`, `intel_lokid`, `intel_tanggal`, `intel_level`, `created_at`, `updated_at`) VALUES (:intel_judul:, :intel_deskripsi:, :intel_katid:, :intel_lokid:, :intel_tanggal:, :intel_level:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Intelijen.php(111): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formTambahIntelijenSimpan()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 03:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 03:40:07 --> ErrorException: Undefined variable $lokid
+in APPPATH\Views\intelijen\intelijen_edit.php on line 10.
+ 1 APPPATH\Views\intelijen\intelijen_edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lokid', 'C:\\xampp\\htdocs\\gis\\app\\Views\\intelijen\\intelijen_edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\gis\\app\\Views\\intelijen\\intelijen_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('intelijen/intelijen_edit', [], true)
+ 5 APPPATH\Controllers\Intelijen.php(148): view('intelijen/intelijen_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->formIntelijenEdit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 03:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 03:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 04:43:09 --> ErrorException: Undefined variable $lokid
+in APPPATH\Views\intelijen\intelijen_detail.php on line 10.
+ 1 APPPATH\Views\intelijen\intelijen_detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lokid', 'C:\\xampp\\htdocs\\gis\\app\\Views\\intelijen\\intelijen_detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\gis\\app\\Views\\intelijen\\intelijen_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('intelijen/intelijen_detail', [], true)
+ 5 APPPATH\Controllers\Intelijen.php(271): view('intelijen/intelijen_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Intelijen->detailIntelijen('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Intelijen))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 04:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 06:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 07:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

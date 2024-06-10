@@ -21,4 +21,11 @@ class ModelKategori extends Model
             ->join('data_intilejen', 'intel_katid=katid', 'left')
             ->get();
     }
+
+    public function cekKategori($katnama)
+    {
+        return $this->table('kategori')->getWhere([
+            'katnama' => $katnama
+        ]);
+    }
 }
