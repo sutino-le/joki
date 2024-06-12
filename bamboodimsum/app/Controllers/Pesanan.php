@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ModelKeranjang;
 use App\Models\ModelMenu;
+use App\Models\ModelPenjualan;
 use App\Models\ModelPesanan;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -97,8 +98,15 @@ class Pesanan extends BaseController
     {
 
         $modelKeranjang = new ModelKeranjang();
+        $cekData = $modelKeranjang->dataKeranjang($userid)->getRowArray();
+        if (empty($cekData['krn_tanggal'])) {
+            $tanggal = date('Y-m-d');
+        } else {
+            $tanggal = $cekData['krn_tanggal'];
+        }
 
         $data = [
+            'tanggal'                   => $tanggal,
             'dataKeranjang'           => $modelKeranjang->dataKeranjang($userid),
         ];
 
@@ -133,16 +141,34 @@ class Pesanan extends BaseController
                 ];
             } else {
 
+                $userid         = $this->request->getPost('userid');
+                $tanggal        = $this->request->getPost('tanggal');
+                $totalharga     = $this->request->getPost('totalharga');
 
-                $userid   = $this->request->getPost('userid');
+                $modelPenjualan = new ModelPenjualan();
+
+                $hasil = $modelPenjualan->nomorPenjualan($userid)->getRowArray();
+
+
+
+
+
+
 
                 $modelKeranjang = new ModelKeranjang();
                 $dataKeranjang       = $modelKeranjang->getWhere(['krn_userid' => $userid]);
 
                 $fieldDetail = [];
 
+                if (empty($hasil['pjl_nomor'])) {
+                    $nomorSekarang =  1;
+                } else {
+                    $nomorSekarang = $hasil['pjl_nomor'] + 1;
+                }
+
                 foreach ($dataKeranjang->getResultArray() as $row) {
                     $fieldDetail[] = [
+                        'psn_nomor'             => $nomorSekarang,
                         'psn_userid'            => $row['krn_userid'],
                         'psn_menuid'            => $row['krn_menuid'],
                         'psn_tanggal'           => $row['krn_tanggal'],
@@ -159,6 +185,16 @@ class Pesanan extends BaseController
                 // hapus temp barang masuk berdasarkan faktur
                 $modelKeranjang->where(['krn_userid' => $userid]);
                 $modelKeranjang->delete();
+
+
+                $modelPenjualan->insert([
+                    'pjl_nomor'            => $nomorSekarang,
+                    'pjl_userid'           => $userid,
+                    'pjl_tanggal'          => $tanggal,
+                    'pjl_totalharga'       => $totalharga,
+                ]);
+
+
 
                 $json = [
                     'sukses' => 'Makanan berhasil dipesan...'

@@ -42,17 +42,17 @@ class Filters extends BaseConfig
             // 'invalidchars',
             'filterAdmin' => [
                 'except' => [
-                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan',
+                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan', '/loginKurir', '/cekUserKurir',
                 ]
             ],
             'filterKurir' => [
                 'except' => [
-                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan',
+                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan', '/loginKurir', '/cekUserKurir',
                 ]
             ],
             'filterPelanggan' => [
                 'except' => [
-                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan',
+                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan', '/loginKurir', '/cekUserKurir',
                 ]
             ],
         ],
@@ -62,23 +62,25 @@ class Filters extends BaseConfig
             // 'secureheaders',
             'filterAdmin' => [
                 'except' => [
-                    '/', '/login', '/cekUser', '/main', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan',
+                    '/', '/login', '/cekUser', '/main', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan', '/loginKurir', '/cekUserKurir',
                     '/level', '/formTambahLevel', '/formTambahLevelSimpan', '/formLevelEdit/*', '/formEditLevelSimpan', '/levelHapus/*',
                     '/user',  '/formTambahUser', '/formTambahUserSimpan', '/formUserEdit/*', '/formEditUserSimpan', '/userHapus/*',
                     '/menumakanan',  '/formTambahMenu', '/formTambahMenuSimpan', '/formMenuEdit/*', '/formEditMenuSimpan', '/menuHapus/*',
                     '/pesanan',
                     '/pengantaran',
+                    '/tentukanKurir/*', '/tentukanKurirSimpan',
                 ]
             ],
             'filterKurir' => [
                 'except' => [
-                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan',
+                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan', '/loginKurir', '/cekUserKurir',
+                    '/dasboardKurir', '/datailPesanan/*', '/pesananProses', '/pesananDiantar', '/pesananSelesai',
                 ]
             ],
             'filterPelanggan' => [
                 'except' => [
-                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan',
-                    '/tambahKeranjang/*', '/formTambahKeranjangSimpan', '/lihatKeranjang/*', '/pesananProses',
+                    '/', '/login', '/cekUser', '/loginPelanggan', '/cekUserPelanggan', '/registrasi', '/registrasiSimpan', '/loginKurir', '/cekUserKurir',
+                    '/tambahKeranjang/*', '/formTambahKeranjangSimpan', '/lihatKeranjang/*',
                 ]
             ],
         ],

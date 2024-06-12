@@ -14,9 +14,7 @@
     <link href="<?= base_url() ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="<?= base_url() ?>assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -33,9 +31,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <!-- =======================================================
@@ -84,25 +80,22 @@
                         <?php
                         if (session()->level == 3) {
                         ?>
-                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#"
-                            onclick="lihatKeranjang('<?= session()->userid ?>')"><i class="bi bi-cart4"
-                                style='font-size:24px' title="Keranjang"></i></a></li>
+                    <li><a class="nav-link scrollto" href="<?= base_url() ?>#" onclick="lihatKeranjang('<?= session()->userid ?>')"><i class="bi bi-cart4" style='font-size:24px' title="Keranjang"></i></a></li>
 
                     <li><a class="nav-link scrollto" href="<?= base_url() ?>#pesanansaya">Pesanan Saya</a></li>
-                    <li class="dropdown"><a href="<?= base_url() ?>#"><span><?= session()->usernama ?></span> <i
-                                class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="<?= base_url() ?>#"><span><?= session()->usernama ?></span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="<?= base_url() ?>logout"">Logout</a></li>
+                            <li><a href="<?= base_url() ?>logout">Logout</a></li>
                         </ul>
                     </li>
-                    <?php
+                <?php
                         } else {
-                    ?>
+                ?>
                     <li><a class=" nav-link scrollto" href="<?= base_url() ?>loginPelanggan">Login</a></li>
-                            <?php
+                <?php
                         }
-                        ?>
-                    </li>
+                ?>
+                </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -123,8 +116,7 @@
                         <a href="<?= base_url() ?>#menu" class="btn-menu animated fadeInUp scrollto">Menu Kami</a>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
-                    data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
                     <a href="https://www.youtube.com/watch?v=ZNQCGXWevQk" class="glightbox play-btn"></a>
                 </div>
 
@@ -179,14 +171,14 @@
                 } else {
                 ?>
 
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="menu-flters">
-                            <li data-filter="*" class="filter-active">Silahkan Login atau Registrasi terlebih dahulu
-                                untuk memesan makanan...</li>
-                        </ul>
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <ul id="menu-flters">
+                                <li data-filter="*" class="filter-active">Silahkan Login atau Registrasi terlebih dahulu
+                                    untuk memesan makanan...</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 <?php
                 }
                 ?>
@@ -194,29 +186,28 @@
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
                     <?php foreach ($dataMenu as $rowMenu) : ?>
 
-                    <div class="col-lg-6 menu-item filter-starters">
-                        <img src="<?= base_url() ?>upload/<?= $rowMenu['menufoto'] ?>" class="menu-img">
-                        <div class="menu-content">
-                            <a href="<?= base_url() ?>#"><?= $rowMenu['menunama'] ?></a><span>Rp.
-                                <?= number_format($rowMenu['menuharga']) ?></span>
-                        </div>
-                        <div class="menu-ingredients">
-                            <?= $rowMenu['menudeskripsi'] ?>
-                        </div>
-                        <div class="menu-ingredients">
-                            <?php
+                        <div class="col-lg-6 menu-item filter-starters">
+                            <img src="<?= base_url() ?>upload/<?= $rowMenu['menufoto'] ?>" class="menu-img">
+                            <div class="menu-content">
+                                <a href="<?= base_url() ?>#"><?= $rowMenu['menunama'] ?></a><span>Rp.
+                                    <?= number_format($rowMenu['menuharga']) ?></span>
+                            </div>
+                            <div class="menu-ingredients">
+                                <?= $rowMenu['menudeskripsi'] ?>
+                            </div>
+                            <div class="menu-ingredients">
+                                <?php
                                 if (session()->level == 3) {
                                 ?>
-                            <button type="button" class="btn btn-sm btn-outline-warning"
-                                onclick="tambahKeranjang('<?= $rowMenu['menuid'] ?>')">Tambah ke Keranjang</button>
-                            <?php
+                                    <button type="button" class="btn btn-sm btn-outline-warning" onclick="tambahKeranjang('<?= $rowMenu['menuid'] ?>')">Tambah ke Keranjang</button>
+                                <?php
                                 } else {
                                     echo "";
                                 }
                                 ?>
 
+                            </div>
                         </div>
-                    </div>
 
                     <?php endforeach ?>
 
@@ -241,7 +232,7 @@
                     } else {
                     ?>
 
-                    <p>Silahkan Login atau Registrasi terlebih dahulu untuk memesan makanan...</p>
+                        <p>Silahkan Login atau Registrasi terlebih dahulu untuk memesan makanan...</p>
                     <?php
                     }
                     ?>
@@ -269,26 +260,25 @@
                     $totalHarga = 0;
                     foreach ($dataPesanan->getResultArray() as $rowPesanan) :
                     ?>
-                    <div class="row">
-                        <div class="col-1">
-                            <img src="<?= base_url() ?>upload/<?= $rowPesanan['menufoto'] ?>" width="50px"
-                                height="50px">
+                        <div class="row">
+                            <div class="col-1">
+                                <img src="<?= base_url() ?>upload/<?= $rowPesanan['menufoto'] ?>" width="50px" height="50px">
+                            </div>
+                            <div class="col-5">
+                                <b><?= $rowPesanan['menunama'] ?></b>
+                                <p><?= $rowPesanan['menudeskripsi'] ?> <br>Rp.
+                                    <?= number_format($rowPesanan['menuharga']) ?></p>
+                            </div>
+                            <div class="col-2">
+                                x <?= $rowPesanan['psn_jumlah'] ?>
+                            </div>
+                            <div class="col-3">
+                                <?= number_format($rowPesanan['menuharga'] * $rowPesanan['psn_jumlah']) ?>
+                            </div>
+                            <div class="col-1">
+                                <b><?= $rowPesanan['psn_status'] ?></b>
+                            </div>
                         </div>
-                        <div class="col-5">
-                            <b><?= $rowPesanan['menunama'] ?></b>
-                            <p><?= $rowPesanan['menudeskripsi'] ?> <br>Rp.
-                                <?= number_format($rowPesanan['menuharga']) ?></p>
-                        </div>
-                        <div class="col-2">
-                            x <?= $rowPesanan['psn_jumlah'] ?>
-                        </div>
-                        <div class="col-3">
-                            <?= number_format($rowPesanan['menuharga'] * $rowPesanan['psn_jumlah']) ?>
-                        </div>
-                        <div class="col-1">
-                            <b><?= $rowPesanan['psn_status'] ?></b>
-                        </div>
-                    </div>
                     <?php
                         $totalHarga += $rowPesanan['menuharga'] * $rowPesanan['psn_jumlah'];
                     endforeach
@@ -358,8 +348,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-1.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -367,8 +356,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-2.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -376,8 +364,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-3.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -385,8 +372,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-4.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -394,8 +380,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-5.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -403,8 +388,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-6.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -412,8 +396,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-7.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -421,8 +404,7 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="<?= base_url() ?>assets/img/gallery/gallery-8.jpg" class="gallery-lightbox"
-                                data-gall="gallery-item">
+                            <a href="<?= base_url() ?>assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
                                 <img src="<?= base_url() ?>assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -444,9 +426,7 @@
             </div>
 
             <div data-aos="fade-up">
-                <iframe style="border:0; width: 100%; height: 350px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2706384738267!2d106.85398967499042!3d-6.228005393760101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f39b4b9d37ad%3A0x9a8ea07d00dbfd82!2sBamboo%20Dimsum%20Tebet!5e0!3m2!1sid!2sid!4v1716348908177!5m2!1sid!2sid"
-                    frameborder="0" allowfullscreen></iframe>
+                <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2706384738267!2d106.85398967499042!3d-6.228005393760101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f39b4b9d37ad%3A0x9a8ea07d00dbfd82!2sBamboo%20Dimsum%20Tebet!5e0!3m2!1sid!2sid!4v1716348908177!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div class="container" data-aos="fade-up">
@@ -489,25 +469,20 @@
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
-                        <form action="<?= base_url() ?>forms/contact.php" method="post" role="form"
-                            class="php-email-form">
+                        <form action="<?= base_url() ?>forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" required>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="8" placeholder="Message"
-                                    required></textarea>
+                                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
@@ -542,12 +517,9 @@
                                 <strong>Email:</strong> bamboodimsum@hosting.com<br>
                             </p>
                             <div class="social-links mt-3">
-                                <a href="https://www.facebook.com/people/BambooDimsum/100077758986103/?checkpoint_src=any"
-                                    class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-                                <a href="https://www.instagram.com/bamboodimsum.id/" class="instagram"
-                                    target="_blank"><i class="bx bxl-instagram"></i></a>
-                                <a href="https://id.linkedin.com/company/bamboo-dimsum-tebet" class="linkedin"
-                                    target="_blank"><i class="bx bxl-linkedin"></i></a>
+                                <a href="https://www.facebook.com/people/BambooDimsum/100077758986103/?checkpoint_src=any" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/bamboodimsum.id/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://id.linkedin.com/company/bamboo-dimsum-tebet" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -593,8 +565,7 @@
 
 
     <div id="preloader"></div>
-    <a href="<?= base_url() ?>#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="<?= base_url() ?>#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="<?= base_url() ?>assets/vendor/aos/aos.js"></script>
@@ -608,40 +579,40 @@
 
 
     <script>
-    function tambahKeranjang(menuid) {
-        $.ajax({
-            url: "<?= base_url() ?>/tambahKeranjang/" + menuid,
-            dataType: "json",
-            success: function(response) {
-                if (response.data) {
-                    $('.viewmodal').html(response.data).show();
-                    $('#modalEdit').modal('show');
+        function tambahKeranjang(menuid) {
+            $.ajax({
+                url: "<?= base_url() ?>/tambahKeranjang/" + menuid,
+                dataType: "json",
+                success: function(response) {
+                    if (response.data) {
+                        $('.viewmodal').html(response.data).show();
+                        $('#modalEdit').modal('show');
+                    }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status + '\n' + thrownError);
                 }
-            },
-            error: function(xhr, ajaxOptions, thrownError) {
-                alert(xhr.status + '\n' + thrownError);
-            }
-        });
-    }
+            });
+        }
 
 
 
 
-    function lihatKeranjang(userid) {
-        $.ajax({
-            url: "<?= base_url() ?>/lihatKeranjang/" + userid,
-            dataType: "json",
-            success: function(response) {
-                if (response.data) {
-                    $('.viewmodal').html(response.data).show();
-                    $('#modalKeranjang').modal('show');
+        function lihatKeranjang(userid) {
+            $.ajax({
+                url: "<?= base_url() ?>/lihatKeranjang/" + userid,
+                dataType: "json",
+                success: function(response) {
+                    if (response.data) {
+                        $('.viewmodal').html(response.data).show();
+                        $('#modalKeranjang').modal('show');
+                    }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status + '\n' + thrownError);
                 }
-            },
-            error: function(xhr, ajaxOptions, thrownError) {
-                alert(xhr.status + '\n' + thrownError);
-            }
-        });
-    }
+            });
+        }
     </script>
 
 </body>

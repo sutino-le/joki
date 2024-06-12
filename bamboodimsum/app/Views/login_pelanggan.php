@@ -14,7 +14,9 @@
     <link href="<?= base_url() ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="<?= base_url() ?>assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -82,17 +84,20 @@
                         <h4>Silahkan Login</h4>
 
 
-                        <form action="<?= base_url() ?>cekUserPelanggan" method="post" role="form" class="php-email-form formlogin">
+                        <form action="<?= base_url() ?>cekUserPelanggan" method="post" role="form"
+                            class="php-email-form formlogin">
 
                             <div class="row mt-4">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="userid" class="form-control" id="userid" placeholder="ID User" autocomplete="off">
+                                    <input type="text" name="userid" class="form-control" id="userid"
+                                        placeholder="ID User" autocomplete="off">
                                     <div class="invalid-feedback errorUserID"></div>
                                 </div>
                             </div>
                             <div class="row mt-4">
                                 <div class="col-md-6 form-group">
-                                    <input type="password" name="userpassword" class="form-control" id="userpassword" placeholder="Password" autocomplete="off">
+                                    <input type="password" name="userpassword" class="form-control" id="userpassword"
+                                        placeholder="Password" autocomplete="off">
                                     <div class="invalid-feedback errorPassword"></div>
                                     <div class="invalid-feedback errorDatabase"></div>
                                 </div>
@@ -132,9 +137,12 @@
                                 <strong>Email:</strong> bamboodimsum@hosting.com<br>
                             </p>
                             <div class="social-links mt-3">
-                                <a href="https://www.facebook.com/people/BambooDimsum/100077758986103/?checkpoint_src=any" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-                                <a href="https://www.instagram.com/bamboodimsum.id/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-                                <a href="https://id.linkedin.com/company/bamboo-dimsum-tebet" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                                <a href="https://www.facebook.com/people/BambooDimsum/100077758986103/?checkpoint_src=any"
+                                    class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/bamboodimsum.id/" class="instagram"
+                                    target="_blank"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://id.linkedin.com/company/bamboo-dimsum-tebet" class="linkedin"
+                                    target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +179,8 @@
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="<?= base_url() ?>assets/vendor/aos/aos.js"></script>
@@ -185,58 +194,58 @@
 
 
     <script>
-        $(document).ready(function() {
-            // proses form login
-            $('.formlogin').submit(function(e) {
-                e.preventDefault();
+    $(document).ready(function() {
+        // proses form login
+        $('.formlogin').submit(function(e) {
+            e.preventDefault();
 
-                $.ajax({
-                    type: "post",
-                    url: $(this).attr('action'),
-                    data: $(this).serialize(),
-                    dataType: "json",
-                    success: function(response) {
-                        if (response.error) {
-                            let err = response.error;
+            $.ajax({
+                type: "post",
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                dataType: "json",
+                success: function(response) {
+                    if (response.error) {
+                        let err = response.error;
 
-                            if (err.errUserID) {
-                                $('#userid').addClass('is-invalid');
-                                $('.errorUserID').html(err.errUserID);
-                            } else {
-                                $('#userid').removeClass('is-invalid');
-                                $('#userid').addClass('is-valid');
-                                $('.errorUserID').html('');
-                            }
-
-                            if (err.errPassword) {
-                                $('#userpassword').addClass('is-invalid');
-                                $('.errorPassword').html(err.errPassword);
-                            } else {
-                                $('#userpassword').removeClass('is-invalid');
-                                $('#userpassword').addClass('is-valid');
-                            }
+                        if (err.errUserID) {
+                            $('#userid').addClass('is-invalid');
+                            $('.errorUserID').html(err.errUserID);
+                        } else {
+                            $('#userid').removeClass('is-invalid');
+                            $('#userid').addClass('is-valid');
+                            $('.errorUserID').html('');
                         }
 
-                        if (response.sukses) {
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'Berhasil',
-                                text: response.sukses
-                            }).then((result) => {
-                                if (result.isConfirmed) {
-                                    location.href = "<?= base_url() ?>";
-                                }
-                            });
+                        if (err.errPassword) {
+                            $('#userpassword').addClass('is-invalid');
+                            $('.errorPassword').html(err.errPassword);
+                        } else {
+                            $('#userpassword').removeClass('is-invalid');
+                            $('#userpassword').addClass('is-valid');
                         }
-                    },
-                    error: function(xhr, ajaxOptions, thrownError) {
-                        alert(xhr.status + '\n' + thrownError);
                     }
-                });
 
+                    if (response.sukses) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Berhasil',
+                            text: response.sukses
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                location.href = "<?= base_url() ?>";
+                            }
+                        });
+                    }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status + '\n' + thrownError);
+                }
             });
 
         });
+
+    });
     </script>
 
 </body>

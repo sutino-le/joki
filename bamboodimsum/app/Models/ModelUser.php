@@ -16,12 +16,20 @@ class ModelUser extends Model
     // Dates
     protected $useTimestamps = true;
 
-
-
     public function dataUser()
     {
         return $this->table('user')
             ->join('level', 'levelid=userlevel', 'left')
+            ->get();
+    }
+
+    public function dataKurir()
+    {
+        return $this->table('user')
+            ->join('level', 'levelid=userid', 'left')
+            ->join('pesanan', 'psn_userid=userid', 'left')
+            ->where('userlevel', '2')
+            ->groupby('userid', 'asc')
             ->get();
     }
 }

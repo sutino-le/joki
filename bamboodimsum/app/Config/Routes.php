@@ -43,6 +43,8 @@ $routes->get('/menuHapus/(:any)', 'Menu::menuHapus/$1');
 // pesanan
 $routes->get('/pesanan', 'Pesanan::index');
 $routes->get('/tambahKeranjang/(:any)', 'Pesanan::tambahKeranjang/$1');
+$routes->get('/tentukanKurir/(:any)', 'Main::tentukanKurir/$1');
+$routes->post('/tentukanKurirSimpan', 'Main::tentukanKurirSimpan');
 
 // pengantaran
 $routes->get('/pengantaran', 'Pengantaran::index');
@@ -59,3 +61,13 @@ $routes->get('/tambahKeranjang/(:any)', 'Pesanan::tambahKeranjang/$1');
 $routes->post('/formTambahKeranjangSimpan', 'Pesanan::formTambahKeranjangSimpan');
 $routes->get('/lihatKeranjang/(:any)', 'Pesanan::lihatKeranjang/$1');
 $routes->post('/pesananProses', 'Pesanan::pesananProses');
+
+
+
+// login kurir
+$routes->get('/loginKurir', 'Login::loginKurir');
+$routes->post('/cekUserKurir', 'Login::cekUserKurir');
+$routes->get('/dasboardKurir', 'Main::dasboardKurir');
+$routes->get('/datailPesanan/(:any)', 'Main::datailPesanan/$1');
+$routes->post('/pesananDiantar', 'Main::pesananDiantar');
+$routes->post('/pesananSelesai', 'Main::pesananSelesai');

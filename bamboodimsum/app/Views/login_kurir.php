@@ -82,7 +82,7 @@
                         <h4>Silahkan Login</h4>
 
 
-                        <form action="<?= base_url() ?>cekUser" method="post" role="form" class="php-email-form formlogin">
+                        <form action="<?= base_url() ?>cekUserKurir" method="post" role="form" class="php-email-form formlogin">
 
                             <div class="row mt-4">
                                 <div class="col-md-6 form-group">
@@ -104,6 +104,7 @@
                                 </div>
                             </div>
                         </form>
+
 
                     </div>
 
@@ -222,7 +223,7 @@
                                 text: response.sukses
                             }).then((result) => {
                                 if (result.isConfirmed) {
-                                    location.href = "<?= base_url() ?>main";
+                                    location.href = "<?= base_url() ?>dasboardKurir";
                                 }
                             });
                         }

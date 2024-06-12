@@ -305,4 +305,94 @@ class Login extends BaseController
             echo json_encode($json);
         }
     }
+
+
+
+
+    // login kurir
+    public function loginKurir()
+    {
+        return view('login_kurir');
+    }
+
+    //form Login
+    function cekUserKurir()
+    {
+        if ($this->request->isAJAX()) {
+            $userid = $this->request->getPost('userid');
+            $userpassword = $this->request->getPost('userpassword');
+
+            $validation = \Config\Services::validation();
+
+
+
+            $valid = $this->validate([
+                'userid'    => [
+                    'label'     => 'ID User',
+                    'rules'     => 'required',
+                    'errors'    => [
+                        'required'  => '{field} tidak boleh kosong...'
+                    ]
+                ],
+                'userpassword'    => [
+                    'label'     => 'Password',
+                    'rules'     => 'required',
+                    'errors'    => [
+                        'required'  => '{field} tidak boleh kosong...'
+                    ]
+                ]
+            ]);
+
+            if (!$valid) {
+                $json = [
+                    'error' => [
+                        'errUserID'     => $validation->getError('userid'),
+                        'errPassword'   => $validation->getError('userpassword'),
+                    ]
+                ];
+            } else {
+                $modelUser  = new ModelUser();
+
+                $cekUser = $modelUser->find($userid);
+
+                if ($cekUser == null) {
+                    $json = [
+                        'error' => [
+                            'errPassword'     => 'Maaf, ID pengguna / Kata Sandi salah!!!',
+                        ]
+                    ];
+                } else if ($cekUser['userlevel'] == '2') {
+                    $cekUserPassword = $cekUser['userpassword'];
+                    if ($userpassword == $cekUserPassword) {
+
+                        // simpan session
+                        $simpan_session = [
+                            'userid'    => $userid,
+                            'usernama'  => $cekUser['usernama'],
+                            'level'  => $cekUser['userlevel'],
+                        ];
+                        session()->set($simpan_session);
+
+                        $json = [
+                            'sukses' => 'Anda telah berhasil login...'
+                        ];
+                    } else {
+                        $json = [
+                            'error' => [
+                                'errPassword'     => 'Maaf, ID pengguna / Kata Sandi salah!!!',
+                            ]
+                        ];
+                    }
+                } else {
+                    $json = [
+                        'error' => [
+                            'errPassword'     => 'Maaf, ID pengguna / Kata Sandi salah!!!',
+                        ]
+                    ];
+                }
+            }
+
+            return json_encode($json);
+        }
+    }
 }

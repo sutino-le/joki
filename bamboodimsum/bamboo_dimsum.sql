@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2024 at 12:04 PM
+-- Generation Time: Jun 12, 2024 at 10:04 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -58,8 +58,8 @@ CREATE TABLE `level` (
 
 INSERT INTO `level` (`levelid`, `levelnama`, `created_at`, `updated_at`) VALUES
 (1, 'Admin', '2024-05-23 03:20:59', '2024-05-23 06:37:59'),
-(3, 'Kurir', '2024-05-23 06:43:18', '2024-05-23 06:43:18'),
-(4, 'Pelanggan', '2024-05-23 06:43:28', '2024-05-23 06:43:28');
+(2, 'Kurir', '2024-05-23 06:43:18', '2024-05-23 06:43:18'),
+(3, 'Pelanggan', '2024-05-23 06:43:28', '2024-05-23 06:43:28');
 
 -- --------------------------------------------------------
 
@@ -91,11 +91,35 @@ INSERT INTO `menu` (`menuid`, `menunama`, `menudeskripsi`, `menuharga`, `menufot
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `penjualan`
+--
+
+CREATE TABLE `penjualan` (
+  `pjl_id` int(11) NOT NULL,
+  `pjl_nomor` int(11) NOT NULL,
+  `pjl_userid` varchar(100) NOT NULL,
+  `pjl_tanggal` date NOT NULL,
+  `pjl_totalharga` double NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `penjualan`
+--
+
+INSERT INTO `penjualan` (`pjl_id`, `pjl_nomor`, `pjl_userid`, `pjl_tanggal`, `pjl_totalharga`, `created_at`, `updated_at`) VALUES
+(1, 1, 'tian', '2024-06-12', 70000, '2024-06-12 01:59:15', '2024-06-12 01:59:15');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `pesanan`
 --
 
 CREATE TABLE `pesanan` (
   `psn_id` int(11) NOT NULL,
+  `psn_nomor` int(11) NOT NULL,
   `psn_userid` varchar(100) NOT NULL,
   `psn_menuid` int(11) NOT NULL,
   `psn_tanggal` date NOT NULL,
@@ -110,10 +134,9 @@ CREATE TABLE `pesanan` (
 -- Dumping data for table `pesanan`
 --
 
-INSERT INTO `pesanan` (`psn_id`, `psn_userid`, `psn_menuid`, `psn_tanggal`, `psn_jumlah`, `psn_status`, `psn_kurir`, `created_at`, `updated_at`) VALUES
-(1, 'andi', 3, '2024-06-06', 1, 'Progress', '', '2024-06-06 01:39:21', '2024-06-06 01:39:21'),
-(2, 'andi', 5, '2024-06-06', 2, 'Progress', '', '2024-06-06 01:39:21', '2024-06-06 01:39:21'),
-(3, 'andi', 7, '2024-06-06', 1, 'Progress', '', '2024-06-06 01:39:21', '2024-06-06 01:39:21');
+INSERT INTO `pesanan` (`psn_id`, `psn_nomor`, `psn_userid`, `psn_menuid`, `psn_tanggal`, `psn_jumlah`, `psn_status`, `psn_kurir`, `created_at`, `updated_at`) VALUES
+(1, 1, 'tian', 4, '2024-06-12', 2, 'Pesanan Selesai', 'andi', '2024-06-12 01:59:15', '2024-06-12 06:36:45'),
+(2, 1, 'tian', 5, '2024-06-12', 2, 'Pesanan Selesai', 'andi', '2024-06-12 01:59:15', '2024-06-12 06:36:45');
 
 -- --------------------------------------------------------
 
@@ -139,7 +162,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`userid`, `usernama`, `useremail`, `userhp`, `userpassword`, `useralamat`, `userlevel`, `created_at`, `updated_at`) VALUES
 ('Admin', 'Administrator', 'admin@gmail.com', '08xxxxxxxxxx', '123456', 'Jakarta', 1, '2024-05-23 03:23:22', '2024-05-23 08:01:05'),
-('andi', 'Andi', 'andi@gmail.com', '088808881234', '123456', 'Jakarta', 3, '2024-06-04 07:26:45', '2024-06-04 07:26:45');
+('andi', 'Andi', 'andi@gmail.com', '088808881234', '123456', 'Jakarta', 2, '2024-06-04 07:26:45', '2024-06-04 07:26:45'),
+('tian', 'Septian', 'septian@gmail.com', '085810100913', '123456', 'Kamal, Tegal Alur, Jakarta Barat.', 3, '2024-06-12 01:57:45', '2024-06-12 01:57:45');
 
 --
 -- Indexes for dumped tables
@@ -164,6 +188,12 @@ ALTER TABLE `menu`
   ADD PRIMARY KEY (`menuid`);
 
 --
+-- Indexes for table `penjualan`
+--
+ALTER TABLE `penjualan`
+  ADD PRIMARY KEY (`pjl_id`);
+
+--
 -- Indexes for table `pesanan`
 --
 ALTER TABLE `pesanan`
@@ -184,7 +214,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `keranjang`
 --
 ALTER TABLE `keranjang`
-  MODIFY `krn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `krn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `level`
@@ -199,10 +229,16 @@ ALTER TABLE `menu`
   MODIFY `menuid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
+-- AUTO_INCREMENT for table `penjualan`
+--
+ALTER TABLE `penjualan`
+  MODIFY `pjl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `psn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `psn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
